@@ -1,0 +1,8 @@
+﻿<Window x:Class="UI.GriddlerFunctions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GriddlerFunctions" Height="300" Width="300">
+    <Grid>
+        
+    </Grid>
+</Window>

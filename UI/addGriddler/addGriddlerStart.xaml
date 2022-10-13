@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:GriddlersSolver="clr-namespace:GriddlersSolver;assembly=GriddlersSolver" mc:Ignorable="d" x:Class="UI.addGriddlerStart"
+        Title="addGriddler" Height="180" Width="200">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid x:Name="grid1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="name:"/>
+            <TextBox x:Name="nameTextBox" Width="120" VerticalAlignment="Center" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Center" Grid.Column="1" Text="{Binding name, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" />
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="X:"/>
+            <ComboBox x:Name="xComboBox" Width="80" VerticalAlignment="Center" Grid.Row="1" Margin="3" Height="Auto" HorizontalAlignment="Left" Grid.Column="1" SelectedItem="{Binding X}"/>
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Y:"/>
+            <ComboBox x:Name="yComboBox" Width="80" VerticalAlignment="Center" Grid.Row="2" Margin="3" Height="Auto" HorizontalAlignment="Left" Grid.Column="1" SelectedItem="{Binding Y}"/>
+        </Grid>
+        <Button Name="OK" Content="OK" Click="OK_Click" Width="50" Margin="10"/>
+    </StackPanel>
+</Window>
